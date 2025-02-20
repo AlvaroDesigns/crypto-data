@@ -6,20 +6,19 @@ import { LineChart } from "@/components/LineChart";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Navbar } from "@/components/ui/navbar";
-import { addDays } from "date-fns";
 import { Euro, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import Image from "next/image";
-import { useState } from "react";
-import { DateRange } from "react-day-picker";
 
 export default function Home() {
   const { setTheme, theme } = useTheme();
+
+  /*
   const [date, setDate] = useState<DateRange | undefined>({
     from: new Date(2022, 0, 20),
     to: addDays(new Date(2022, 0, 20), 20),
-  });
+  });*/
 
   return (
     <div className="grid items-center justify-items-center min-h-screen pb-20 font-[family-name:var(--font-geist-sans)]">
